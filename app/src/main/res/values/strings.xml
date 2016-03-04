@@ -2,7 +2,7 @@
     <string name="app_name">KenjiOkamotoInvestmentCalculator</string>
     <string name="action_settings">Settings</string>
     <string name="payment_label">Payment</string>
-    <string name="rate_label">Rate</string>
+    <string name="rate_label">Rate %</string>
     <string name="years_label">Years</string>
     <string name="end_balance_label">End Balance</string>
     <string name="calculate_button">Calculate</string>

@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
         try {
             payment = Double.parseDouble(paymentEditText.getText().toString());
-            rate = Double.parseDouble(rateEditText.getText().toString());
+            rate = Double.parseDouble(rateEditText.getText().toString()) / 100;
         } catch (NumberFormatException exception) {
             resultTextView.setText("Payment and Rate need to be decimal numbers");
             return;
