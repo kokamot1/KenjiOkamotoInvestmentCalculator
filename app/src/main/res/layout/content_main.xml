@@ -20,7 +20,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:id="@+id/paymentTextView" />
 
     <EditText
@@ -91,7 +91,8 @@
         android:id="@+id/button"
         android:layout_marginTop="20dp"
         android:layout_below="@+id/yearsEditText"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="calculateButtonClick" />
 
     <TextView
         android:layout_width="wrap_content"
