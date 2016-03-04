@@ -13,7 +13,102 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/payment_label"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/paymentTextView" />
+
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/paymentEditText"
+        android:layout_alignBaseline="@+id/paymentTextView"
+        android:layout_alignBottom="@+id/paymentTextView"
+        android:layout_toRightOf="@+id/paymentTextView"
+        android:layout_toEndOf="@+id/paymentTextView"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/rate_label"
+        android:id="@+id/rateTextView"
+        android:layout_below="@+id/paymentTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/rateEditText"
+        android:layout_alignBaseline="@+id/rateTextView"
+        android:layout_alignBottom="@+id/rateTextView"
+        android:layout_toRightOf="@+id/rateTextView"
+        android:layout_toEndOf="@+id/rateTextView"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp" />
+
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/years_label"
+        android:id="@+id/yearsTextView"
+        android:layout_below="@+id/rateTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="26dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/yearsEditText"
+        android:layout_alignBaseline="@+id/yearsTextView"
+        android:layout_alignBottom="@+id/yearsTextView"
+        android:layout_toRightOf="@+id/yearsTextView"
+        android:layout_toEndOf="@+id/yearsTextView"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_button"
+        android:id="@+id/button"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/yearsEditText"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/end_balance_label"
+        android:id="@+id/endBalanceLabelTextView"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/endBalancetextView"
+        android:layout_below="@+id/endBalanceLabelTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
 </RelativeLayout>
